@@ -1,0 +1,145 @@
+body {
+  background-color: #272b33 !important;
+}
+
+.image-container {
+  position: relative;
+  width: 75%;
+  margin: 0 auto;
+}
+.carousel-title-small {
+  font-size: 450%;
+  text-align: center;
+  font-weight: 900;
+  border-radius: 100%;
+}
+.carousel-title {
+  font-size: 650%;
+  text-align: center;
+  font-weight: 900;
+  border-radius: 100%;
+}
+
+.carousel-subtitle-secondary {
+  font-weight: 400;
+  font-size: 150%;
+  border-radius: 100%;
+}
+
+.carousel-indicators [data-bs-target] {
+  border-radius: 20% !important;
+  height: 5px !important;
+  width: 30px !important;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: #fff;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about-header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.about-header .subtitle {
+  font-size: 1.5rem;
+  color: #ccc;
+}
+
+.about-section {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.about-section h2 {
+  color: #4caf50;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.step {
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+}
+
+.step h3 {
+  color: #4caf50;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.step p {
+  color: #ccc;
+}
+
+.about-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-section ul li {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #ddd;
+}
+
+.about-section ul li:before {
+  content: "✓";
+  color: #4caf50;
+  position: absolute;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 1rem;
+  }
+
+  .about-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-header .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .about-section {
+    padding: 1.5rem;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+}

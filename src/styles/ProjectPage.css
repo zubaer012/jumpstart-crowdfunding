@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap");
+
+body {
+  background-color: #272b33 !important;
+}
+
+.abril-fatface-regular {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+}
+
+.teko-category {
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #15496e;
+}
+
+.money {
+  color: #036704;
+}
+
+.hr-separator {
+  border-top: 3px dotted black;
+}
+
+.backer-input-shadow {
+  box-shadow: 3px 3px 3px #8f9092;
+}
+
+.backer-submit {
+  box-shadow: 2px 2px 1px #14a44d;
+  width: 50%;
+  display: inline-block;
+}
+
+.project-page-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  height: calc(100vh - 76px); /* Subtract navbar height */
+  overflow: hidden;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project-header {
+  text-align: left;
+}
+
+.project-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.project-company {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.project-image-container {
+  width: 100%;
+  height: 400px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+
+.stat-item h3 {
+  font-size: 2rem;
+  color: #4caf50;
+  margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+  color: #ccc;
+  font-size: 1.1rem;
+}
+
+.progress-container {
+  margin: 0;
+}
+
+.funding-progress {
+  height: 10px !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.funding-progress .progress-bar {
+  background-color: #4caf50 !important;
+}
+
+.funding-section {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  margin: 0;
+}
+
+.fund-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.fund-input:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+.fund-button {
+  padding: 0.75rem 2rem;
+  background-color: #4caf50 !important;
+  border: none !important;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.fund-button:hover {
+  background-color: #45a049 !important;
+}
+
+.project-description {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 2rem;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.project-description h2 {
+  color: #4caf50;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.project-description p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+@media (max-width: 1200px) {
+  .project-page-container {
+    grid-template-columns: 1fr;
+    height: auto;
+    overflow-y: auto;
+  }
+
+  .project-image-container {
+    height: 300px;
+  }
+
+  .project-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .project-page-container {
+    padding: 1rem;
+  }
+
+  .project-title {
+    font-size: 2rem;
+  }
+
+  .project-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .funding-section {
+    flex-direction: column;
+  }
+
+  .fund-button {
+    width: 100%;
+  }
+}
